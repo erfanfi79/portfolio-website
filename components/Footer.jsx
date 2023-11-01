@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <div className="flex flex-row p-1  bg-neutral-200 justify-center items-end">
       {parts.map((item, index) => (
-        <div className="p-1">
+        <div className="p-1" key={index}>
           <item.icon size="1.6em"/>
         </div>
       ))}

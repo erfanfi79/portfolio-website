@@ -47,7 +47,7 @@ const Experience = () => {
           Experience
         </div>
         {infos.map((item, index) => (
-          <InfoSection info={item} />
+          <InfoSection info={item} key={index}/>
         ))}
       </div>
       <div className="w-full h-px border border-neutral-400"></div>

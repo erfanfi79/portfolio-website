@@ -26,7 +26,7 @@ const InfoSection = ({ info }) => {
       <div className="flex flex-col text-black leading-10 m-1"></div>
       {info.description &&
         info.description.map((d, index) => (
-          <div className="text-sm">• {d}</div>
+          <div className="text-sm" key={index}>• {d}</div>
         ))}
     </div>
   );

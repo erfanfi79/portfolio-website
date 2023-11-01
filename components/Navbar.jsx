@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="flex flex-row p-2  bg-neutral-200 justify-around items-end">
       {parts.map((item, index) => (
-        <div className="text-center text-black lg:text-3xl md:text-xl font-semibold font-['Inter'] hover:text-blue-800">
+        <div className="text-center text-black lg:text-3xl md:text-xl font-semibold font-['Inter'] hover:text-blue-800" key={index}>
           {item.name}
         </div>
       ))}
