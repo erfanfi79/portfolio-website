@@ -20,10 +20,10 @@ const Navbar = () => {
     { name: "Contact me", id: "s-contactme" },
   ];
   return (
-    <nav className="flex flex-row p-2  bg-neutral-200 justify-around ">
+    <nav class="flex flex-row justify-around  bg-neutral-200 p-2 ">
       {parts.map((item, index) => (
         <div
-          className="text-center text-black lg:text-2xl md:text-lg sm:text-sm font-semibold font-sans hover:text-blue-800"
+          class="text-center font-sans text-xs font-semibold text-black hover:text-blue-800 sm:text-sm md:text-lg lg:text-2xl"
           onClick={() => handleClickScroll(item.id)}
           key={index}
         >

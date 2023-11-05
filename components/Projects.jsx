@@ -1,7 +1,7 @@
 import React from "react";
 import InfoSection from "./common/InfoSection";
 
-const Projects = ({id}) => {
+const Projects = ({ id }) => {
   const infos = [
     {
       title: "Ethereum Crowdfunding platform",
@@ -34,15 +34,15 @@ const Projects = ({id}) => {
   ];
   return (
     <div id={id}>
-      <div className="m-3 pt-2">
-        <div className="text-center text-blue-900 text-2xl font-bold">
+      <div class="m-3 pt-2">
+        <div class="text-center text-xl font-bold text-blue-900 sm:text-2xl">
           Projects
         </div>
         {infos.map((item, index) => (
-          <InfoSection info={item} key={index}/>
+          <InfoSection info={item} key={index} />
         ))}
       </div>
-      <div className="w-full h-px border border-neutral-400"></div>
+      <div class="h-px w-full border border-neutral-400"></div>
     </div>
   );
 };

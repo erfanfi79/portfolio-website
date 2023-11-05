@@ -5,28 +5,30 @@ import { LiaCalendarCheckSolid } from "react-icons/lia";
 import { IoLocationSharp } from "react-icons/io5";
 const InfoSection = ({ info }) => {
   return (
-    <div className="flex flex-col p-5 mb-2">
-      <div className="text-black text-2xl">{info.title}</div>
+    <div class="mb-2 flex flex-col p-5">
+      <div class="text-lg sm:text-2xl text-black">{info.title}</div>
       <Link href={info.company.link}>
-        <div className="text-blue-600 font-bold leading-10 inline-flex">
-          <div className="mr-2">{info.company.name}</div>
+        <div class="inline-flex font-bold leading-10 text-blue-600">
+          <div class="mr-2">{info.company.name}</div>
           {info.company.icon && (
             <Image src={info.company.icon} width={20} height={20} />
           )}
         </div>
       </Link>
       {info.date && (
-        <div className="inline-flex gap-3 text-neutral-700 text-sm">
+        <div class="inline-flex gap-3 text-xs sm:text-sm text-neutral-700">
           <LiaCalendarCheckSolid size={"1.4em"} />
           <div>{info.date.start}</div> -<div>{info.date.end}</div>
           <IoLocationSharp size={"1.4em"} />
           <div>{info.location}</div>
         </div>
       )}
-      <div className="flex flex-col text-black leading-10 m-1"></div>
+      <div class="m-1 flex flex-col leading-10 text-black"></div>
       {info.description &&
         info.description.map((d, index) => (
-          <div className="text-sm" key={index}>• {d}</div>
+          <div class="text-sm" key={index}>
+            • {d}
+          </div>
         ))}
     </div>
   );

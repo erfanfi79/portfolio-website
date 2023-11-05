@@ -1,7 +1,7 @@
 import React from "react";
 import InfoSection from "./common/InfoSection";
 
-const Experience = ({id}) => {
+const Experience = ({ id }) => {
   const infos = [
     {
       title: "Backend Developer",
@@ -42,15 +42,15 @@ const Experience = ({id}) => {
   ];
   return (
     <div id={id}>
-      <div className="m-3 pt-2">
-        <div className="text-center text-blue-900 text-2xl font-bold">
+      <div class="m-3 pt-2">
+        <div class="text-center text-xl font-bold text-blue-900 sm:text-2xl">
           Experience
         </div>
         {infos.map((item, index) => (
-          <InfoSection info={item} key={index}/>
+          <InfoSection info={item} key={index} />
         ))}
       </div>
-      <div className="w-full h-px border border-neutral-400"></div>
+      <div class="h-px w-full border border-neutral-400"></div>
     </div>
   );
 };

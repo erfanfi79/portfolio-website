@@ -1,27 +1,29 @@
-"use client"
+"use client";
 import React from "react";
 
 const ContactMe = ({ id }) => {
   return (
-    <div id={id} className="flex flex-col items-center m-5">
-      <div className="text-blue-900 font-bold p-3">Contact me</div>
+    <div id={id} class="m-5 flex flex-col items-center">
+      <div class="p-3 text-xl font-bold text-blue-900 sm:text-2xl">
+        Contact me
+      </div>
       <input
-        className="input input-bordered bg-transparent h-10 m-1 w-2/3"
+        class="input input-bordered m-1 h-10 w-2/3 bg-transparent"
         placeholder="Your Name"
       />
       <input
-        className="input input-bordered bg-transparent h-10 m-1 w-2/3"
+        class="input input-bordered m-1 h-10 w-2/3 bg-transparent"
         placeholder="Your Email"
       />
       <input
-        className="input input-bordered bg-transparent h-10 m-1 w-2/3"
+        class="input input-bordered m-1 h-10 w-2/3 bg-transparent"
         placeholder="Categories"
       />
       <textarea
-        className="textarea textarea-bordered bg-transparent m-1 w-2/3"
+        class="textarea textarea-bordered m-1 w-2/3 bg-transparent"
         placeholder="Your message"
       />
-      <button className="btn bg-blue-800 border-hidden text-white hover:text-black w-2/3">
+      <button class="btn w-2/3 border-hidden bg-blue-800 text-white hover:text-black">
         Submit
       </button>
     </div>
