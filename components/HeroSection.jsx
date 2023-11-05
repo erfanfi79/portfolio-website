@@ -6,7 +6,7 @@ const HeroSection = () => {
 <div className="hero" style={{backgroundImage: `url(${bg_image.src})`, height:'90%'}}>
   <div className="hero-overlay bg-opacity-95"></div>
   <div className="hero-content text-left text-neutral-content">
-    <div className="max-w-md">
+    <div className="max-w-3xl">
       <Image width={100} height={100} src={"/boypic.png"}/>
       <h1 className="mb-5 text-5xl font-bold">Hello, I’m Erfan</h1>
       <p className="mb-5">A software engineer

@@ -1,7 +1,7 @@
 import React from "react";
 import InfoSection from "./common/InfoSection";
 
-const Experience = () => {
+const Experience = ({id}) => {
   const infos = [
     {
       title: "Backend Developer",
@@ -41,7 +41,7 @@ const Experience = () => {
     },
   ];
   return (
-    <div>
+    <div id={id}>
       <div className="m-3 pt-2">
         <div className="text-center text-blue-900 text-2xl font-bold">
           Experience

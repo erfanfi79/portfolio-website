@@ -1,7 +1,7 @@
 import React from "react";
 import InfoSection from "./common/InfoSection";
 
-const Projects = () => {
+const Projects = ({id}) => {
   const infos = [
     {
       title: "Ethereum Crowdfunding platform",
@@ -33,7 +33,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div>
+    <div id={id}>
       <div className="m-3 pt-2">
         <div className="text-center text-blue-900 text-2xl font-bold">
           Projects
