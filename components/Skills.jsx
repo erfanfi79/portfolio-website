@@ -27,7 +27,7 @@ const Skills = ({ id }) => {
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-4">
           {infos.map((item, index) => (
-            <div class="m-4 flex flex-col items-center" id={index}>
+            <div class="m-4 flex flex-col items-center" key={index}>
               <div>{item.name}</div>
               <div
                 class="radial-progress m-2 border-4 border-blue-500 p-2 text-blue-800 shadow-md hover:text-xl"
