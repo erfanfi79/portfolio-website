@@ -11,7 +11,7 @@ const InfoSection = ({ info }) => {
         <div class="inline-flex font-bold leading-10 text-blue-600">
           <div class="mr-2">{info.company.name}</div>
           {info.company.icon && (
-            <Image src={info.company.icon} width={20} height={20} />
+            <Image src={info.company.icon} width={20} height={20} alt="website-icon" />
           )}
         </div>
       </Link>
